@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        }
+
+/*body style*/    
+        body {
+            background-color: #eee;
+            color: black; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+/*dark theme style*/       
+        .dark{
+                background-color: rgb(25, 25, 25);
+                color: #ccc;            
+            }
+/*links style*/
+        a{
+            color: #2196f3;
+            text-decoration: none;   
+            }
+        a:hover{
+            color: red;
+            }
+        a:active{
+            color: green;
+            }
+
+/*clear float*/ 
+        .clr{
+            clear: both;
+            }
+
+/*container style*/  
+        .container{
+            width: 800px;
+            margin: auto;
+            }
+
+    /*my name*/ 
+        #my-name{
+            float: left;
+            padding: 10px 15px 10px 15px;
+            margin-right: 0;
+            width: 60%;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-sizing: border-box;
+            }
+
+    /*contact information*/
+        #contact{
+            float: right;
+            padding: 15px;
+            width: 40%;
+            font-size: .8em;
+            box-sizing: border-box;
+            }
+        .content-head{
+            float: left;
+            color: #2196f3;
+            padding: 10px 15px 10px 15px;
+            font-size:1em ;
+            font-weight: bold;
+            max-width: 20%;
+        }
+        .content-body{
+            float: right;
+            width: 60%;
+            padding: 15px;
+            font-size: .8em;
+            text-align: justify;           
+        }
+
+        .skills-body{
+            width: 15%;
+            padding-right: 15px;
+            float: left;
+            max-width: 70%;
+            text-align: center;
+        }
+/*dark mode switcher*/
+        .switch{
+            position: relative;
+            display: inline-block;
+            width: 55px;
+            height: 28px;     
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        #switcher{
+            float: right;
+        }
+
+        .switch input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider{
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider::before{
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider{
+            background-color: #2196f3;
+        }
+
+        input:focus + .slider{
+            box-shadow: 0 0 1px #2196f3;
+        }
+
+        input:checked + .slider::before{
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+/*Back to top button*/
+       #top{
+           background-color: #000;
+           float: right;
+           right: 18.5%;
+           left: 77.25%;
+           max-width: 32px;
+           font-size: 9px;
+           padding: 1px;
+           border-radius: 5px;
+           cursor: pointer;
+           text-decoration: none;
+        }  
+    </style>
+
+    <title>Abdulrasheed Adediran</title>
+
+</head>
+<body>
+<!--Theme toggle-->
+    <div id="switcher">
+        <label class="switch">
+        <input type="checkbox" onclick="myFunction()">
+        <span class="slider round"></span>
+        </label>
+    </div>
+        <div class="clr"></div>
+<!--Container--> 
+        <div class="container">
+    <!--Name-->        
+        <div id="my-name">
+            <p>Abdulrasheed Adediran</p>
+        </div>
+    <!--Contact-->    
+        <div id="contact">
+                <p>+2348037779749 <br>
+                adediran.ajibade@gmail.com <br>
+                <a id="git" href="abdulrasheedadediran.github.io" target="_blank">abdulrasheedadediran.github.io</a> <br>
+                </p>
+        </div>
+        <div class="clr"></div>
+        <hr>
+    <!--Skills and Qualifications-->
+        <div>
+            <div class="content-head">
+                <p>Introduction</p>
+            </div>  
+            <div class="content-body">
+                <p>Hi, I am Abdulrasheed, a data analyst and front-end developer with a strong passion for learning. The endless possibilities and opportunities to grow and build drew me to the world of web development. I enjoy transforming data into valuable insight and beautiful designs into interactive websites.</p>
+            </div> 
+        </div>
+        <div class="clr"></div>
+        <hr>
+
+        <div>
+            <div class="content-head">
+                <p>Interests</p>
+            </div> 
+            <div class="content-body">
+                <p>Front-end Engineering | Data Analytics | UI/UX Design </p>
+            </div>
+        </div>
+        <div class="clr"></div>
+        <hr>
+
+        <div>
+            <div class="content-head">
+                <p>Skills</p>
+            </div>
+        <div class="content-body">
+            <div class="skills-body">
+                <img src="https://i.stack.imgur.com/PgcSR.png" width="90" height="65" alt="HTML Logo">HTML</div> 
+            <div class="skills-body">
+                <img src="https://cdn.clipart.email/9924122f6a73b517e96ffaced1f2ac9b_download-icon-css-3-svg-eps-png-psd-ai-logo-vector-color-free-el-_1141-1600.png"  width="60" height="65" alt="CSS Logo"><br> CSS</div>
+            <div class="skills-body">
+                <img src="https://cdn.clipart.email/2c17d2e1f5fef3120826e15a6f2e5ccc_javascript-logo-png-transparent-svg-vector-freebie-supply_2400-2400.png" width="70" height="65" alt="JavaScipt Logo">JavaScipt</div>
+        </div>
+        <div class="clr"></div>
+    </div> <!--End of container-->
+
+<!--Back to top button-->
+    <div id="back-to-top">
+        <button id="top"> 
+            <a href="#my-name">Back to top</a>
+        </button>
+        </div>
+    <div class="clr"></div>
+    
+    <script>
+        //theme toggle 
+          function myFunction () {
+              var element = document.body;
+              element.classList.toggle("dark");
+          }
+    </script>
+</body>
+</html>
