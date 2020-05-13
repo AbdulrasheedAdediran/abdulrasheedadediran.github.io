@@ -3,29 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Abdulrasheed Adediran</title>
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-        }
-
-/*body style*/    
-        body {
-            background-color: #eee;
-            color: black; 
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        /*clear float*/ 
+        .clr{
+            clear: both;
             }
-/*dark theme style*/       
-        .dark{
-                background-color: rgb(25, 25, 25);
-                color: #ccc;            
-            }
-/*links style*/
-        a{
-            color: #2196f3;
-            text-decoration: none;   
+        /*links style*/
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
             }
         a:hover{
             color: red;
@@ -33,73 +21,120 @@
         a:active{
             color: green;
             }
-
-/*clear float*/ 
-        .clr{
-            clear: both;
+        body{
+            background-color: #eee;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /*dark theme style*/       
+        .dark {
+                background-color: rgb(40, 40, 40);
+                color: #ddd;            
             }
-
-/*container style*/  
-        .container{
-            width: 800px;
+        #header{
+            background-color: rgb(49, 1, 49);
+            color: rgb(255, 255, 255);
+            margin-top: 0;
+            width: 100%;
+            height: 203px;
+            display: inline-block;
+        }
+        #introduction{
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
             margin: auto;
-            }
-
-    /*my name*/ 
-        #my-name{
-            float: left;
-            padding: 10px 15px 10px 15px;
-            margin-right: 0;
-            width: 60%;
-            font-size: 1.5em;
-            font-weight: bold;
-            box-sizing: border-box;
-            }
-
-    /*contact information*/
-        #contact{
-            float: right;
-            padding: 15px;
-            width: 40%;
-            font-size: .8em;
-            box-sizing: border-box;
-            }
-        .content-head{
-            float: left;
-            color: #2196f3;
-            padding: 10px 15px 10px 15px;
-            font-size:1em ;
-            font-weight: bold;
-            max-width: 20%;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 70%;
         }
-        .content-body{
-            float: right;
-            width: 60%;
-            padding: 15px;
-            font-size: .8em;
-            text-align: justify;           
+        
+       #contact{
+           text-align: center;
+           margin: auto;
+           background-color: rgb(250, 7, 197);
+           border: seagreen 2px solid;
+           border-radius: 100px;
+           width: 70%;
+       }
+       summary{
+           outline: none;
+       }
+        
+        #container{
+            max-width: 95%;
+            margin: auto;
         }
 
-        .skills-body{
-            width: 15%;
-            padding-right: 15px;
-            float: left;
-            max-width: 70%;
+        .interests{
+            background-color: rgb(240, 186, 240);
+            color: rgb(49, 1, 49);
+            width: 23%;
+            margin-left: 6%;
+            margin-right: 3%;
+            border-bottom: seagreen 2px solid;
+            display: inline-block;
+        }
+        #interest-1{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: center;
+            
+        }
+        #interest-2{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
             text-align: center;
         }
-/*dark mode switcher*/
+        #interest-3{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: center;
+        }
+        #skills-head{
+            text-align: center;
+            background-color: rgb(49, 1, 49);
+            color: rgb(255, 255, 255);
+        }
+        .skills-body{
+            width: 40%;
+            float: right;
+            text-align: center;
+            line-height: 20px;
+            font-family:'Comic Sans MS';
+        }
+        #skills-body-html{
+            border-bottom: seagreen 2px solid;
+            border-top: seagreen 2px solid;
+            padding-top: 5px;
+            margin-left: 5%;
+        }
+        #skills-body-css{
+            border-bottom: seagreen 2px solid;
+            border-top: seagreen 2px solid;
+            padding-top: 5px;
+            margin-right: 10%;
+        }#skills-body-javascript{
+            border-bottom: seagreen 2px solid;
+            padding-top: 5px;
+            margin-left: 5%;
+        }#skills-body-python{
+            border-bottom: seagreen 2px solid;
+            padding-top: 5px;
+            margin-right: 10%;
+        }
+        
+        /*dark mode switcher*/
         .switch{
             position: relative;
             display: inline-block;
-            width: 55px;
-            height: 28px;     
-            margin-top: 20px;
-            margin-right: 20px;
+            width: 50px;
         }
         #switcher{
             float: right;
+            margin-right: 1%;
+            margin-top: 1%;
         }
-
         .switch input{
             opacity: 0;
             width: 0;
@@ -115,16 +150,16 @@
             background-color: #ccc;
             -webkit-transition: .4s;
             transition: .4s;
-            border-radius: 34px;
+            border-radius: 35px;
         }
 
         .slider::before{
             position: absolute;
             content: "";
-            height: 20px;
-            width: 20px;
+            height: 15px;
+            width: 15px;
             left: 4px;
-            bottom: 4px;
+            bottom: 2px;
             background-color: white;
             -webkit-transition: .4s;
             transition: .4s;
@@ -132,11 +167,11 @@
         }
 
         input:checked + .slider{
-            background-color: #2196f3;
+            background-color: seagreen;
         }
 
         input:focus + .slider{
-            box-shadow: 0 0 1px #2196f3;
+            box-shadow: 0 0 0px seagreen;
         }
 
         input:checked + .slider::before{
@@ -145,97 +180,88 @@
             transform: translateX(26px);
         }
 
-/*Back to top button*/
-       #top{
-           background-color: #000;
+        #top{
+           background-color: rgb(250, 7, 197);
+           color: rgb(255, 255, 255);
            float: right;
-           right: 18.5%;
-           left: 77.25%;
-           max-width: 32px;
-           font-size: 9px;
-           padding: 1px;
            border-radius: 5px;
+           border: seagreen 1px solid
            cursor: pointer;
-           text-decoration: none;
-        }  
+        }
     </style>
-
-    <title>Abdulrasheed Adediran</title>
-
 </head>
 <body>
-<!--Theme toggle-->
-    <div id="switcher">
-        <label class="switch">
-        <input type="checkbox" onclick="myFunction()">
-        <span class="slider round"></span>
-        </label>
-    </div>
-        <div class="clr"></div>
-<!--Container--> 
-        <div class="container">
-    <!--Name-->        
-        <div id="my-name">
-            <p>Abdulrasheed Adediran</p>
+
+    <div id="header"> <!--Start tag of "Header"-->
+        <div id="switcher"> <!--Theme toggle-->
+            <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider round"></span>
+            </label>
         </div>
-    <!--Contact-->    
+        
+        <div id="introduction">
+            <p>Hi, I am Abdulrasheed, a data analyst and front-end developer. I enjoy transforming data into valuable insight and building beautiful interactive websites.</p> 
+        </div>    
         <div id="contact">
-                <p>+2348037779749 <br>
-                adediran.ajibade@gmail.com <br>
-                <a id="git" href="abdulrasheedadediran.github.io" target="_blank">abdulrasheedadediran.github.io</a> <br>
-                </p>
+            <details>
+                <summary>Contact Me</summary>
+                    <p>+2348037779749 <br>
+            adediran.ajibade@gmail.com <br>
+            <a id="git" href="abdulrasheedadediran.github.io" target="_blank">abdulrasheedadediran.github.io</a> <br>
+            </p>
+            </details>
         </div>
+    
+    </div> <!--End tag of "Header"-->
         <div class="clr"></div>
-        <hr>
-    <!--Skills and Qualifications-->
-        <div>
-            <div class="content-head">
-                <p>Introduction</p>
-            </div>  
-            <div class="content-body">
-                <p>Hi, I am Abdulrasheed, a data analyst and front-end developer with a strong passion for learning. The endless possibilities and opportunities to grow and build drew me to the world of web development. I enjoy transforming data into valuable insight and beautiful designs into interactive websites.</p>
-            </div> 
+    <br>
+    <div id="container"> <!--Opening tag of Container-->
+            
+        <br>
+        <div class="interests" id="interest-1">
+            <p>Front-end <br> Engineering</p>
         </div>
-        <div class="clr"></div>
-        <hr>
+        <div class="interests" id="interest-2">
+            <p>Data <br> Analytics</p>
+        </div>
+        <div class="interests" id="interest-3">
+            <p>UI/UX <br> Design</p>
+        </div>
+        <div class="clr"></div><!--Clear float-->
+        <br>
+        <div id="skills-head">
+            <p>SKILLS</p>
+        </div>
 
-        <div>
-            <div class="content-head">
-                <p>Interests</p>
-            </div> 
-            <div class="content-body">
-                <p>Front-end Engineering | Data Analytics | UI/UX Design </p>
-            </div>
+        <div class="skills-body" id="skills-body-css">
+            <img src="https://cdn.clipart.email/9924122f6a73b517e96ffaced1f2ac9b_download-icon-css-3-svg-eps-png-psd-ai-logo-vector-color-free-el-_1141-1600.png"  width="60" height="65" alt="CSS Logo"><br>CSS
+        </div>
+
+        <div class="skills-body" id="skills-body-html">
+            <img src="https://i.stack.imgur.com/PgcSR.png" width="90" height="65" alt="HTML Logo"><br>HTML
+        </div>
+        
+        <div class="skills-body" id="skills-body-python">
+            <img src="https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png" width="70" height="65" alt="Python Logo"><br>Python
+        </div>
+        <div class="skills-body" id="skills-body-javascript">
+            <img src="https://cdn.clipart.email/2c17d2e1f5fef3120826e15a6f2e5ccc_javascript-logo-png-transparent-svg-vector-freebie-supply_2400-2400.png" width="70" height="65" alt="JavaScipt Logo"><br>JavaScript
         </div>
         <div class="clr"></div>
-        <hr>
-
-        <div>
-            <div class="content-head">
-                <p>Skills</p>
-            </div>
-        <div class="content-body">
-            <div class="skills-body">
-                <img src="https://i.stack.imgur.com/PgcSR.png" width="90" height="65" alt="HTML Logo">HTML</div> 
-            <div class="skills-body">
-                <img src="https://cdn.clipart.email/9924122f6a73b517e96ffaced1f2ac9b_download-icon-css-3-svg-eps-png-psd-ai-logo-vector-color-free-el-_1141-1600.png"  width="60" height="65" alt="CSS Logo"><br> CSS</div>
-            <div class="skills-body">
-                <img src="https://cdn.clipart.email/2c17d2e1f5fef3120826e15a6f2e5ccc_javascript-logo-png-transparent-svg-vector-freebie-supply_2400-2400.png" width="70" height="65" alt="JavaScipt Logo">JavaScipt</div>
-        </div>
-        <div class="clr"></div>
-    </div> <!--End of container-->
-
-<!--Back to top button-->
-    <div id="back-to-top">
+        <br>
+        
+    </div><!--End tag of container-->
+    <div id="back-to-top"> <!--Back to top button-->
         <button id="top"> 
-            <a href="#my-name">Back to top</a>
+            <a href="#introduction">Back to top</a>
         </button>
         </div>
     <div class="clr"></div>
-    
+
     <script>
         //theme toggle 
-          function myFunction () {
+        function myFunction () {
               var element = document.body;
               element.classList.toggle("dark");
           }
